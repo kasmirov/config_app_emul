@@ -1,0 +1,239 @@
+{
+  "msg_type": "DEVICE_SETUP_FULL",
+  "msg_id": 18,
+  "sender_dev_id": 2121213,
+  "dest_dev_id": 0,
+  "msg_body": {
+    "dev_info": {
+      "dev_id": 2121213,
+      "dev_type": "Servo Control Unit",
+      "dev_name": "Simple Device #1",
+      "dev_hw_ver": "1.1.02",
+      "dev_fw_ver": "0.0.02",
+      "fw_date": "2020.06.27 23:00:49",
+      "param_uuid": "764a2882-c380-11ea-87d0-0242ac130003"
+    },
+    "param_setup_full": [
+      {
+        "section_id": 1,
+        "section_name": "Section 1",
+        "section_param": [
+          {
+            "param_id": 1001,
+            "param_type": "Integer",
+            "param_min": 0,
+            "param_max": 200,
+            "param_value": 123,
+            "param_root": 0,
+            "param_caption": "Parameter #1",
+            "param_descr": "Very important parameter"
+          },
+          {
+            "param_id": 1002,
+            "param_type": "Caption",
+            "param_value": "Group Caption"
+          },
+          {
+            "param_id": 1003,
+            "param_type": "Integer",
+            "param_min": -200,
+            "param_max": 200,
+            "param_value": -5,
+            "param_root": 1002,
+            "param_caption": "Parameter #2",
+            "param_descr": "Very important parameter"
+          },
+          {
+            "param_id": 1004,
+            "param_type": "Float",
+            "param_min": -100,
+            "param_max": 100,
+            "param_value": -50.5,
+            "param_root": 1002,
+            "param_caption": "Parameter #3",
+            "param_descr": "Very important parameter"
+          },
+          {
+            "param_id": 1005,
+            "param_type": "Combo",
+            "param_options": [
+              {
+                "option_id": 0,
+                "option_name": "Option 1"
+              },
+              {
+                "option_id": 1,
+                "option_name": "Option 2"
+              },
+              {
+                "option_id": 2,
+                "option_name": "Option 3"
+              }
+            ],
+            "param_value": 1,
+            "param_root": 1002,
+            "param_caption": "Combobox #1",
+            "param_descr": "Very important combo \n option 1 - make something useful \n option 2 - less useful \n option 3 - more useful"
+          },
+          {
+            "param_id": 1006,
+            "param_type": "Check",
+            "param_options": [
+              {
+                "option_id": 0,
+                "option_name": "Check 1"
+              },
+              {
+                "option_id": 1,
+                "option_name": "Check 2"
+              },
+              {
+                "option_id": 2,
+                "option_name": "Check 3"
+              }
+            ],
+            "param_value": [
+              1,
+              2
+            ],
+            "param_root": 0,
+            "param_caption": "Check list #1",
+            "param_descr": "Very important check list"
+          },
+          {
+            "param_id": 1007,
+            "param_type": "Radio",
+            "param_options": [
+              {
+                "option_id": 0,
+                "option_name": "Radio 1"
+              },
+              {
+                "option_id": 1,
+                "option_name": "Radio 2"
+              },
+              {
+                "option_id": 2,
+                "option_name": "Radio 3"
+              }
+            ],
+            "param_value": 2,
+            "param_root": 0,
+            "param_caption": "Radio list #1",
+            "param_descr": "Very important radio list"
+          }
+        ]
+      },
+      {
+        "section_id": 2,
+        "section_name": "Section 2",
+        "section_param": [
+          {
+            "param_id": 1008,
+            "param_type": "Integer",
+            "param_min": 0,
+            "param_max": 200,
+            "param_value": 123,
+            "param_root": 0,
+            "param_caption": "Parameter #1",
+            "param_descr": "Very important parameter"
+          },
+          {
+            "param_id": 1009,
+            "param_type": "Caption",
+            "param_value": "Group Caption"
+          },
+          {
+            "param_id": 1010,
+            "param_type": "Integer",
+            "param_min": -200,
+            "param_max": 200,
+            "param_value": -5,
+            "param_root": 1009,
+            "param_caption": "Parameter #2",
+            "param_descr": "Very important parameter"
+          },
+          {
+            "param_id": 1011,
+            "param_type": "Float",
+            "param_min": -100,
+            "param_max": 100,
+            "param_value": -50.5,
+            "param_root": 1009,
+            "param_caption": "Parameter #3",
+            "param_descr": "Very important parameter"
+          },
+          {
+            "param_id": 1012,
+            "param_type": "Combo",
+            "param_options": [
+              {
+                "option_id": 0,
+                "option_name": "Option 1"
+              },
+              {
+                "option_id": 1,
+                "option_name": "Option 2"
+              },
+              {
+                "option_id": 2,
+                "option_name": "Option 3"
+              }
+            ],
+            "param_value": 1,
+            "param_root": 0,
+            "param_caption": "Combobox #2",
+            "param_descr": "Very important combo \n option 1 - make something useful \n option 2 - less useful \n option 3 - more useful"
+          },
+          {
+            "param_id": 1013,
+            "param_type": "Check",
+            "param_options": [
+              {
+                "option_id": 0,
+                "option_name": "Check 1"
+              },
+              {
+                "option_id": 1,
+                "option_name": "Check 2"
+              },
+              {
+                "option_id": 2,
+                "option_name": "Check 3"
+              }
+            ],
+            "param_value": [
+              1,
+              2
+            ],
+            "param_root": 0,
+            "param_caption": "Check list #2",
+            "param_descr": "Very important check list"
+          },
+          {
+            "param_id": 1014,
+            "param_type": "Radio",
+            "param_options": [
+              {
+                "option_id": 0,
+                "option_name": "Radio 1"
+              },
+              {
+                "option_id": 1,
+                "option_name": "Radio 2"
+              },
+              {
+                "option_id": 2,
+                "option_name": "Radio 3"
+              }
+            ],
+            "param_value": 2,
+            "param_root": 0,
+            "param_caption": "Radio list #2",
+            "param_descr": "Very important radio list"
+          }
+        ]
+      }
+    ]
+  }
+}

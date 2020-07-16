@@ -1,0 +1,73 @@
+{
+  "msg_type": "DEVICE_SETUP_FULL",
+  "msg_id": 18,
+  "sender_dev_id": 2121213,
+  "dest_dev_id": 0,
+  "msg_body": {
+    "dev_info": {
+      "dev_id": 2121213,
+      "dev_type": "Servo Control Unit",
+      "dev_name": "Simple Device #1",
+      "dev_hw_ver": "1.1.02",
+      "dev_fw_ver": "0.0.02",
+      "fw_date": "2020.06.27 23:00:49",
+      "param_uuid": "764a2882-c380-11ea-87d0-0242ac130003"
+    },
+    "param_setup_full": [
+      {
+        "param_id": 1001,
+        "param_value": 123
+      },
+      {
+        "param_id": 1003,
+        "param_value": -5
+      },
+      {
+        "param_id": 1004,
+        "param_value": -50.5
+      },
+      {
+        "param_id": 1005,
+        "param_value": 1
+      },
+      {
+        "param_id": 1006,
+        "param_value": [
+          1,
+          2
+        ]
+      },
+      {
+        "param_id": 1007,
+        "param_value": 2
+      },
+      {
+        "param_id": 1008,
+        "param_value": 123
+      },
+      {
+        "param_id": 1010,
+        "param_value": -5
+      },
+      {
+        "param_id": 1011,
+        "param_value": -50.5
+      },
+      {
+        "param_id": 1012,
+        "param_value": 1
+      },
+      {
+        "param_id": 1013,
+        "param_value": [
+          1,
+          2
+        ]
+      },
+      {
+        "param_id": 1014,
+        "param_value": 2
+      }
+    ]
+  }
+}

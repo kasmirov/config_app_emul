@@ -1,0 +1,28 @@
+{
+  "msg_type": "DEVICE_LIST",
+  "msg_id": 32,
+  "sender_dev_id": 0,
+  "dest_dev_id": 0,
+  "msg_body": {
+    "device_list": [
+      {
+        "dev_id": 2121213,
+        "dev_type": "Servo Control Unit",
+        "dev_name": "Simple Device #1",
+        "dev_hw_ver": "1.1.02",
+        "dev_fw_ver": "0.0.02",
+        "fw_date": "2020.06.27 23:00:49",
+        "param_uuid": "764a2882-c380-11ea-87d0-0242ac130003"
+      },
+      {
+        "dev_id": 4323243,
+        "dev_type": "Power Control Unit",
+        "dev_name": "Simple Device #2",
+        "dev_hw_ver": "2.1.02",
+        "dev_fw_ver": "1.0.02",
+        "fw_date": "2020.06.27 23:00:49",
+        "param_uuid": "064a2880-c380-11ea-87d0-0242ac130003"
+      }
+    ]
+  }
+}
