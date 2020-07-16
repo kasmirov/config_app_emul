@@ -122,17 +122,17 @@ class SocketServerThread(Thread):
                                     dest_dev_id = data['dest_dev_id']
                                     param_id = data['msg_body']['value_new']['param_id']
                                     param_value = data['msg_body']['value_new']['param_value']
-                                    resp_str = '{"msg_type": "DEVICE_VALUE_CONFIRM",\
-                                        "msg_id": %d,\
-                                        "sender_dev_id": %d,\
-                                        "dest_dev_id": %d,\
-                                        "msg_body": {\
-                                        "value_confirm": {\
-                                        "msg_id_confirm": %d,\
-                                        "result": "OK",\
-                                        "param_id": %d,\
-                                        "new_value":%d\
-                                        }}}' % (msg_id+1, dest_dev_id, sender_dev_id, msg_id, param_id, param_value)
+                                    resp_str = '{\r"msg_type": "DEVICE_VALUE_CONFIRM",\r\
+                                        "msg_id": %d,\r\
+                                        "sender_dev_id": %d,\r\
+                                        "dest_dev_id": %d,\r\
+                                        "msg_body": {\r\
+                                        "value_confirm": {\r\
+                                        "msg_id_confirm": %d,\r\
+                                        "result": "OK",\r\
+                                        "param_id": %d,\r\
+                                        "new_value":%d\r\
+                                        }\r}\r}' % (msg_id+1, dest_dev_id, sender_dev_id, msg_id, param_id, param_value)
                                     self.client_sock.send(bytes(resp_str, 'cp1251'))
 
             else:
@@ -152,10 +152,10 @@ class SocketServerThread(Thread):
 
 if __name__ == "__main__":
     # Start socket server, stop it after a given duration
-    duration = 2 * 600
+    #duration = 2 * 600
     server = SocketServer()
     server.start()
-    time.sleep(duration)
-    server.stop()
-    server.join()
-    print('End.')
+    #time.sleep(duration)
+    #server.stop()
+    #server.join()
+    #print('End.')

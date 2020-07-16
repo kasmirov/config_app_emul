@@ -1,5 +1,5 @@
 {
-  "msg_type": "DEVICE_SETUP_FULL",
+  "msg_type": "DEVICE_SETUP_VALUES",
   "msg_id": 18,
   "sender_dev_id": 2121213,
   "dest_dev_id": 0,
