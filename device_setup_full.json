@@ -11,7 +11,7 @@
       "dev_hw_ver": "1.1.02",
       "dev_fw_ver": "0.0.02",
       "fw_date": "2020.06.27 23:00:49",
-      "param_uuid": "764a2882-c380-11ea-87d0-0242ac130003"
+      "param_uuid": "764a2882-c380-11ea-87d0-0242ac130004"
     },
     "param_setup_full": [
       {
@@ -233,7 +233,76 @@
             "param_descr": "Very important radio list"
           }
         ]
-      }
+      },
+	  {
+        "section_id": 3,
+        "section_name": "Section 3",
+        "section_param": [
+		]
+	  }
+,
+	  {
+        "section_id": 4,
+        "section_name": "Section 4",
+        "section_param": [
+		]
+	  }
+,
+	  {
+        "section_id": 5,
+        "section_name": "Section 5",
+        "section_param": [
+		]
+	  }
+,
+	  {
+        "section_id": 6,
+        "section_name": "Section 6",
+        "section_param": [
+		]
+	  }
+,
+	  {
+        "section_id": 7,
+        "section_name": "Section 7",
+        "section_param": [
+		]
+	  }
+,
+	  {
+        "section_id": 8,
+        "section_name": "Section 8",
+        "section_param": [
+		]
+	  }
+,
+	  {
+        "section_id": 9,
+        "section_name": "Section 9",
+        "section_param": [
+		]
+	  }
+,
+	  {
+        "section_id": 10,
+        "section_name": "Section 10",
+        "section_param": [
+		]
+	  }
+,
+	  {
+        "section_id": 11,
+        "section_name": "Section 11",
+        "section_param": [
+		]
+	  }
+,
+	  {
+        "section_id": 12,
+        "section_name": "Section 12",
+        "section_param": [
+		]
+	  }
     ]
   }
 }
