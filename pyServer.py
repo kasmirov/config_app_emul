@@ -99,7 +99,8 @@ class SocketServerThread(Thread):
                     else:
                         # Strip newlines just for output clarity
                         print(bcolors.blue)
-                        print('[Thr {}] Received {}'.format(self.number, read_data.rstrip()))
+                        print('[Thr {}] Received:'.format(self.number, ))#read_data.rstrip()
+                        print(read_data.decode('cp1251'))
                         print(bcolors.reset)
 
                         # Проверка полученных данных на тип
@@ -107,6 +108,7 @@ class SocketServerThread(Thread):
                             data = json.loads(read_data)
                         except json.decoder.JSONDecodeError as err:
                             print('JSON error')
+                            continue
 
                         if type(data) == dict:
                             if 'msg_type' in data:
@@ -115,6 +117,7 @@ class SocketServerThread(Thread):
                                     # read example DEVICE_LIST
                                     f = open('device_list.json', 'r')
                                     print(bcolors.green + f.read() + bcolors.reset)
+                                    f.seek(0)
                                     for l in f:                                        
                                         self.client_sock.send(bytes(l, 'cp1251'))
                                     f.close()
@@ -122,6 +125,7 @@ class SocketServerThread(Thread):
                                     # read example REQUEST_SETUP_FULL
                                     f = open('device_setup_full.json', 'r')
                                     print(bcolors.green + f.read()  + bcolors.reset)
+                                    f.seek(0)
                                     for l in f:                                        
                                         self.client_sock.send(bytes(l, 'cp1251'))
                                     f.close()
@@ -129,6 +133,7 @@ class SocketServerThread(Thread):
                                     # read example REQUEST_SETUP_VALUES
                                     f = open('device_setup_values.json', 'r')
                                     print(bcolors.green + f.read()  + bcolors.reset)
+                                    f.seek(0)
                                     for l in f:                                        
                                         self.client_sock.send(bytes(l, 'cp1251'))
                                     f.close()  
@@ -147,16 +152,15 @@ class SocketServerThread(Thread):
                                         result = 'Failed'
 
                                     if type(param_value) == list:
-
-                                        resp_str = '{\r"msg_type": "DEVICE_VALUE_CONFIRM",\r\
-                                            "msg_id": %d,\r\
-                                            "sender_dev_id": %d,\r\
-                                            "dest_dev_id": %d,\r\
-                                            "msg_body": {\r\
-                                            "value_confirm": {\r\
-                                            "msg_id_confirm": %d,\r\
-                                            "result": "%s",\r\
-                                            "param_id": %d,\r\
+                                        resp_str = '{\n"msg_type": "DEVICE_VALUE_CONFIRM",\n\
+                                            "msg_id": %d,\n\
+                                            "sender_dev_id": %d,\n\
+                                            "dest_dev_id": %d,\n\
+                                            "msg_body": {\n\
+                                            "value_confirm": {\n\
+                                            "msg_id_confirm": %d,\n\
+                                            "result": "%s",\n\
+                                            "param_id": %d,\n\
                                             "new_value": [' % (msg_id+1, dest_dev_id, sender_dev_id, msg_id, result, param_id)
                                         i = 0
                                         for x in param_value:
@@ -164,24 +168,25 @@ class SocketServerThread(Thread):
                                                 resp_str = resp_str + '%d'%(x)
                                                 i = 1
                                             else:
-                                                resp_str = resp_str + ', %d, '%(x)
-                                        resp_str = resp_str + ']\r}\r}\r}'                                                
-                                    elif (type(param_value) == int) or (type(param_value) == float):
+                                                resp_str = resp_str + ', %d'%(x)
+                                        resp_str = resp_str + ']\n}\n}\n}'   
+                                        print(bcolors.green + resp_str.replace(' ', '') + bcolors.reset)
+                                        self.client_sock.send(bytes(resp_str, 'cp1251'))   
 
-                                        resp_str = '{\r"msg_type": "DEVICE_VALUE_CONFIRM",\r\
-                                            "msg_id": %d,\r\
-                                            "sender_dev_id": %d,\r\
-                                            "dest_dev_id": %d,\r\
-                                            "msg_body": {\r\
-                                            "value_confirm": {\r\
-                                            "msg_id_confirm": %d,\r\
-                                            "result": "%s",\r\
-                                            "param_id": %d,\r\
-                                            "new_value":%d\r\
-                                            }\r}\r}' % (msg_id+1, dest_dev_id, sender_dev_id, msg_id, result, param_id, param_value)
-                                    
-                                    self.client_sock.send(bytes(resp_str, 'cp1251'))
-                                    print(bcolors.green + resp_str + bcolors.reset)
+                                    elif (type(param_value) == int) or (type(param_value) == float):
+                                        resp_str = '{\n"msg_type": "DEVICE_VALUE_CONFIRM",\n\
+                                            "msg_id": %d,\n\
+                                            "sender_dev_id": %d,\n\
+                                            "dest_dev_id": %d,\n\
+                                            "msg_body": {\n\
+                                            "value_confirm": {\n\
+                                            "msg_id_confirm": %d,\n\
+                                            "result": "%s",\n\
+                                            "param_id": %d,\n\
+                                            "new_value":%d\n\
+                                            }\n}\n}' % (msg_id+1, dest_dev_id, sender_dev_id, msg_id, result, param_id, param_value)
+                                        print(bcolors.green + resp_str.replace(' ', '')  + bcolors.reset)
+                                        self.client_sock.send(bytes(resp_str, 'cp1251'))
 
             else:
                 print("[Thr {}] No client is connected, SocketServer can't receive data".format(self.number))
