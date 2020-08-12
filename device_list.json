@@ -6,8 +6,17 @@
   "msg_body": {
     "device_list": [
       {
-        "dev_id": 2121213,
+        "dev_id": 123,
         "dev_type": "Servo Control Unit",
+        "dev_name": "Servo Control Unit",
+        "dev_hw_ver": "0.1",
+        "dev_fw_ver": "0.1",
+        "fw_date": "2020.08.09 23:00:00",
+        "param_uuid": "123456789-c380-11ea-87d0-0242ac000001"
+      },
+      {
+        "dev_id": 2121213,
+        "dev_type": "Servo Control Unit old",
         "dev_name": "Simple Device #1",
         "dev_hw_ver": "1.1.02",
         "dev_fw_ver": "0.0.02",

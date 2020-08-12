@@ -151,6 +151,7 @@ class SocketServerThread(Thread):
                                         param_value = 155
                                         result = 'Failed'
 
+                                    #print(type(param_value))
                                     if type(param_value) == list:
                                         resp_str = '{\n"msg_type": "DEVICE_VALUE_CONFIRM",\n\
                                             "msg_id": %d,\n\
@@ -173,7 +174,7 @@ class SocketServerThread(Thread):
                                         print(bcolors.green + resp_str.replace(' ', '') + bcolors.reset)
                                         self.client_sock.send(bytes(resp_str, 'cp1251'))   
 
-                                    elif (type(param_value) == int) or (type(param_value) == float):
+                                    elif type(param_value) == int:
                                         resp_str = '{\n"msg_type": "DEVICE_VALUE_CONFIRM",\n\
                                             "msg_id": %d,\n\
                                             "sender_dev_id": %d,\n\
@@ -188,6 +189,20 @@ class SocketServerThread(Thread):
                                         print(bcolors.green + resp_str.replace(' ', '')  + bcolors.reset)
                                         self.client_sock.send(bytes(resp_str, 'cp1251'))
 
+                                    elif type(param_value) == float:
+                                        resp_str = '{\n"msg_type": "DEVICE_VALUE_CONFIRM",\n\
+                                            "msg_id": %d,\n\
+                                            "sender_dev_id": %d,\n\
+                                            "dest_dev_id": %d,\n\
+                                            "msg_body": {\n\
+                                            "value_confirm": {\n\
+                                            "msg_id_confirm": %d,\n\
+                                            "result": "%s",\n\
+                                            "param_id": %d,\n\
+                                            "new_value":%f\n\
+                                            }\n}\n}' % (msg_id+1, dest_dev_id, sender_dev_id, msg_id, result, param_id, param_value)
+                                        print(bcolors.green + resp_str.replace(' ', '')  + bcolors.reset)
+                                        self.client_sock.send(bytes(resp_str, 'cp1251'))
             else:
                 print("[Thr {}] No client is connected, SocketServer can't receive data".format(self.number))
                 self.stop()
