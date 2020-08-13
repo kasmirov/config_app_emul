@@ -145,11 +145,13 @@ class SocketServerThread(Thread):
                                     param_id = data['msg_body']['value_new']['param_id']
                                     param_value = data['msg_body']['value_new']['param_value']
                                     result = 'OK'
-
+                                    
+                                    '''
                                     # Проверка на возврат другого значения
                                     if param_id == 1001:
                                         param_value = 155
                                         result = 'Failed'
+                                    '''
 
                                     #print(type(param_value))
                                     if type(param_value) == list:
