@@ -1,33 +1,22 @@
 {
-    "device_list": [
+    "devices_to_check": [
       {
-        "dev_id": 12345,
-        "dev_type": "[demo] Servo Control Unit",
-        "dev_name": "[demo] Servo Control Unit",
-        "dev_hw_ver": "0.1",
-        "dev_fw_ver": "0.1",
-        "fw_date": "2020.08.09 23:00:00",
-        "param_uuid": "123456789-c380-11ea-87d0-0242ac000001",
-		"access_via": "file",
+ 		"access_via": "file",
 		"file_name": "demo_servo_control_unit.json"
       },
       {
-        "dev_id": 2121213,
-        "dev_type": "Servo Control Unit old",
-        "dev_name": "Simple Device #1",
-        "dev_hw_ver": "1.1.02",
-        "dev_fw_ver": "0.0.02",
-        "fw_date": "2020.06.27 23:00:49",
-        "param_uuid": "764a2882-c380-11ea-87d0-0242ac130004"
+ 		"access_via": "file",
+		"file_name": "demo_servo_control_unit_compact.json"
       },
       {
-        "dev_id": 4323243,
-        "dev_type": "Power Control Unit",
-        "dev_name": "Simple Device #2",
-        "dev_hw_ver": "2.1.02",
-        "dev_fw_ver": "1.0.02",
-        "fw_date": "2020.06.27 23:00:49",
-        "param_uuid": "064a2880-c380-11ea-87d0-0242ac130004"
+ 		"access_via": "com_port",
+		"com_port": "COM14",
+		"com_port_speed": 115200
+      },
+      {
+ 		"access_via": "socket",
+		"ip_addr": "192.168.1.10",
+		"ip_port": "5555"
       }
     ] 
 }

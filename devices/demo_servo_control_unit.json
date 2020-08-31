@@ -1,13 +1,8 @@
 {
-  "msg_type": "DEVICE_SETUP_FULL",
-  "msg_id": 1,
-  "sender_dev_id": 0,
-  "dest_dev_id": 0,
-  "msg_body": {
     "dev_info": {
       "dev_id": 12345,
-      "dev_type": "Servo control unit",
-      "dev_name": "DEMO Servo control unit",
+      "dev_type": "[demo] Servo Control Unit",
+      "dev_name": "[demo] Servo Control Unit",
       "dev_hw_ver": "0.1",
       "dev_fw_ver": "0.1",
       "fw_date": "2020.08.12 23:00:00",
@@ -1740,5 +1735,5 @@
         "section_param": []
       }
     ]
-  }
+  
 }
