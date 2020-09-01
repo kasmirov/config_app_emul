@@ -1,5 +1,5 @@
 {
-    "devices_to_check": [
+    "devices_to_check": [	  	  
       {
  		"access_via": "file",
 		"file_name": "demo_servo_control_unit.json"
