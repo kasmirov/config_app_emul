@@ -1,0 +1,423 @@
+{
+  "dev_info": {
+    "dev_id": 111,
+    "dev_type": "Servo Control Unit",
+    "dev_name": "Servo Control Unit",
+    "dev_hw_ver": "0.2",
+    "dev_fw_ver": "0.2",
+    "fw_date": "2020.09.01 23:00:00",
+    "param_uuid": "123456789-c380-11ea-87d0-0242ac100333"
+  },
+  "param_setup_full": [
+    {
+      "section_id": 1,
+      "section_name": "Receiver",
+      "section_param": [
+        {
+          "param_id": 1000,
+          "param_type": "Combo",
+          "param_options": [
+            {
+              "option_id": 0,
+              "option_name": "Futaba S-Bus"
+            }
+          ],
+          "param_value": 0,
+          "param_root": 0,
+          "param_caption": "Receiver type",
+          "param_descr": "Specify type of receiver: \nNo Receiver \nFutaba S-Bus \nOpen TX"
+        },
+        {
+          "param_id": 1001,
+          "param_type": "Combo",
+          "param_options": [
+            {
+              "option_id": 0,
+              "option_name": "No Channel"
+            },
+            {
+              "option_id": 1,
+              "option_name": "Channel 1"
+            },
+            {
+              "option_id": 2,
+              "option_name": "Channel 2"
+            },
+            {
+              "option_id": 3,
+              "option_name": "Channel 3"
+            },
+            {
+              "option_id": 4,
+              "option_name": "Channel 4"
+            },
+            {
+              "option_id": 5,
+              "option_name": "Channel 5"
+            },
+            {
+              "option_id": 6,
+              "option_name": "Channel 6"
+            },
+            {
+              "option_id": 7,
+              "option_name": "Channel 7"
+            },
+            {
+              "option_id": 8,
+              "option_name": "Channel 8"
+            },
+            {
+              "option_id": 9,
+              "option_name": "Channel 9"
+            },
+            {
+              "option_id": 10,
+              "option_name": "Channel 10"
+            },
+            {
+              "option_id": 11,
+              "option_name": "Channel 11"
+            },
+            {
+              "option_id": 12,
+              "option_name": "Channel 12"
+            },
+            {
+              "option_id": 13,
+              "option_name": "Channel 13"
+            },
+            {
+              "option_id": 14,
+              "option_name": "Channel 14"
+            },
+            {
+              "option_id": 15,
+              "option_name": "Channel 15"
+            },
+            {
+              "option_id": 16,
+              "option_name": "Channel 16"
+            }
+          ],
+          "param_value": 0,
+          "param_root": 0,
+          "param_caption": "Aileron",
+          "param_descr": "Select aileron channel"
+        },
+        {
+          "param_id": 1002,
+          "param_type": "Combo",
+          "param_options": [
+            {
+              "option_id": 0,
+              "option_name": "No Channel"
+            },
+            {
+              "option_id": 1,
+              "option_name": "Channel 1"
+            },
+            {
+              "option_id": 2,
+              "option_name": "Channel 2"
+            },
+            {
+              "option_id": 3,
+              "option_name": "Channel 3"
+            },
+            {
+              "option_id": 4,
+              "option_name": "Channel 4"
+            },
+            {
+              "option_id": 5,
+              "option_name": "Channel 5"
+            },
+            {
+              "option_id": 6,
+              "option_name": "Channel 6"
+            },
+            {
+              "option_id": 7,
+              "option_name": "Channel 7"
+            },
+            {
+              "option_id": 8,
+              "option_name": "Channel 8"
+            },
+            {
+              "option_id": 9,
+              "option_name": "Channel 9"
+            },
+            {
+              "option_id": 10,
+              "option_name": "Channel 10"
+            },
+            {
+              "option_id": 11,
+              "option_name": "Channel 11"
+            },
+            {
+              "option_id": 12,
+              "option_name": "Channel 12"
+            },
+            {
+              "option_id": 13,
+              "option_name": "Channel 13"
+            },
+            {
+              "option_id": 14,
+              "option_name": "Channel 14"
+            },
+            {
+              "option_id": 15,
+              "option_name": "Channel 15"
+            },
+            {
+              "option_id": 16,
+              "option_name": "Channel 16"
+            }
+          ],
+          "param_value": 0,
+          "param_root": 0,
+          "param_caption": "Elevator",
+          "param_descr": "Select elevator channel"
+        },
+        {
+          "param_id": 1003,
+          "param_type": "Combo",
+          "param_options": [
+            {
+              "option_id": 0,
+              "option_name": "No Channel"
+            },
+            {
+              "option_id": 1,
+              "option_name": "Channel 1"
+            },
+            {
+              "option_id": 2,
+              "option_name": "Channel 2"
+            },
+            {
+              "option_id": 3,
+              "option_name": "Channel 3"
+            },
+            {
+              "option_id": 4,
+              "option_name": "Channel 4"
+            },
+            {
+              "option_id": 5,
+              "option_name": "Channel 5"
+            },
+            {
+              "option_id": 6,
+              "option_name": "Channel 6"
+            },
+            {
+              "option_id": 7,
+              "option_name": "Channel 7"
+            },
+            {
+              "option_id": 8,
+              "option_name": "Channel 8"
+            },
+            {
+              "option_id": 9,
+              "option_name": "Channel 9"
+            },
+            {
+              "option_id": 10,
+              "option_name": "Channel 10"
+            },
+            {
+              "option_id": 11,
+              "option_name": "Channel 11"
+            },
+            {
+              "option_id": 12,
+              "option_name": "Channel 12"
+            },
+            {
+              "option_id": 13,
+              "option_name": "Channel 13"
+            },
+            {
+              "option_id": 14,
+              "option_name": "Channel 14"
+            },
+            {
+              "option_id": 15,
+              "option_name": "Channel 15"
+            },
+            {
+              "option_id": 16,
+              "option_name": "Channel 16"
+            }
+          ],
+          "param_value": 0,
+          "param_root": 0,
+          "param_caption": "Throttle",
+          "param_descr": "Select throttle channel"
+        },
+        {
+          "param_id": 1004,
+          "param_type": "Combo",
+          "param_options": [
+            {
+              "option_id": 0,
+              "option_name": "No Channel"
+            },
+            {
+              "option_id": 1,
+              "option_name": "Channel 1"
+            },
+            {
+              "option_id": 2,
+              "option_name": "Channel 2"
+            },
+            {
+              "option_id": 3,
+              "option_name": "Channel 3"
+            },
+            {
+              "option_id": 4,
+              "option_name": "Channel 4"
+            },
+            {
+              "option_id": 5,
+              "option_name": "Channel 5"
+            },
+            {
+              "option_id": 6,
+              "option_name": "Channel 6"
+            },
+            {
+              "option_id": 7,
+              "option_name": "Channel 7"
+            },
+            {
+              "option_id": 8,
+              "option_name": "Channel 8"
+            },
+            {
+              "option_id": 9,
+              "option_name": "Channel 9"
+            },
+            {
+              "option_id": 10,
+              "option_name": "Channel 10"
+            },
+            {
+              "option_id": 11,
+              "option_name": "Channel 11"
+            },
+            {
+              "option_id": 12,
+              "option_name": "Channel 12"
+            },
+            {
+              "option_id": 13,
+              "option_name": "Channel 13"
+            },
+            {
+              "option_id": 14,
+              "option_name": "Channel 14"
+            },
+            {
+              "option_id": 15,
+              "option_name": "Channel 15"
+            },
+            {
+              "option_id": 16,
+              "option_name": "Channel 16"
+            }
+          ],
+          "param_value": 0,
+          "param_root": 0,
+          "param_caption": "Rudder",
+          "param_descr": "Select rudder channel"
+        },
+        {
+          "param_id": 1005,
+          "param_type": "Combo",
+          "param_options": [
+            {
+              "option_id": 0,
+              "option_name": "No Channel"
+            },
+            {
+              "option_id": 1,
+              "option_name": "Channel 1"
+            },
+            {
+              "option_id": 2,
+              "option_name": "Channel 2"
+            },
+            {
+              "option_id": 3,
+              "option_name": "Channel 3"
+            },
+            {
+              "option_id": 4,
+              "option_name": "Channel 4"
+            },
+            {
+              "option_id": 5,
+              "option_name": "Channel 5"
+            },
+            {
+              "option_id": 6,
+              "option_name": "Channel 6"
+            },
+            {
+              "option_id": 7,
+              "option_name": "Channel 7"
+            },
+            {
+              "option_id": 8,
+              "option_name": "Channel 8"
+            },
+            {
+              "option_id": 9,
+              "option_name": "Channel 9"
+            },
+            {
+              "option_id": 10,
+              "option_name": "Channel 10"
+            },
+            {
+              "option_id": 11,
+              "option_name": "Channel 11"
+            },
+            {
+              "option_id": 12,
+              "option_name": "Channel 12"
+            },
+            {
+              "option_id": 13,
+              "option_name": "Channel 13"
+            },
+            {
+              "option_id": 14,
+              "option_name": "Channel 14"
+            },
+            {
+              "option_id": 15,
+              "option_name": "Channel 15"
+            },
+            {
+              "option_id": 16,
+              "option_name": "Channel 16"
+            }
+          ],
+          "param_value": 0,
+          "param_root": 0,
+          "param_caption": "Pitch",
+          "param_descr": "Select pitch channel"
+        }
+      ]
+    }
+  ]
+}
