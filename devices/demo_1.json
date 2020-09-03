@@ -6,7 +6,7 @@
     "dev_hw_ver": "0.2",
     "dev_fw_ver": "0.2",
     "fw_date": "2020.09.02 23:00:00",
-    "param_uuid": "000456789-c380-11ea-87d0-0242ac100444"
+    "param_uuid": "000456789-c380-11ea-87d0-0242ac100555"
   },
   "param_setup_full": [
     {
@@ -106,7 +106,7 @@
           "param_descr": "Select aileron channel"
         },
         {
-          "param_id": 10016,
+          "param_id": 1002,
           "param_type": "Check",
           "param_options": [
             {
@@ -131,7 +131,7 @@
           "param_descr": "Very important check list"
         },
         {
-          "param_id": 10017,
+          "param_id": 1003,
           "param_type": "Radio",
           "param_options": [
             {
@@ -153,13 +153,23 @@
           "param_descr": "Very important radio list"
         },
         {
-          "param_id": 10010,
+          "param_id": 1004,
           "param_type": "Integer",
           "param_min": 0,
           "param_max": 200,
           "param_value": 123,
           "param_root": 0,
           "param_caption": "Aileron",
+          "param_descr": "Very important parameter"
+        },
+        {
+          "param_id": 1005,
+          "param_type": "Float",
+          "param_min": -100,
+          "param_max": 100,
+          "param_value": 50.5,
+          "param_root": 0,
+          "param_caption": "Parameter #3",
           "param_descr": "Very important parameter"
         }		
       ]

@@ -102,12 +102,10 @@ def msg_parse_json(self, data):
 
             elif data['msg_type'] == 'REQUEST_SETUP_FULL':
                 # read example REQUEST_SETUP_FULL
-                print(bcolors.yellow + 'read file') 
-                print (self.found_devices)
-                print(bcolors.reset)
                 for fd in self.found_devices:
-                    if 'dev_id' in fd:                        
+                    if 'filename' in fd:                                                
                         if fd['dev_id'] == data['dest_dev_id']:
+                            print(bcolors.yellow + 'Read file' + bcolors.reset)
                             f = open(fd['filename'], 'r')
                             try:
                                 demo_file_json = json.loads(f.read())
@@ -118,17 +116,52 @@ def msg_parse_json(self, data):
                             resp = json.dumps(dp, default=lambda o: o.__dict__, sort_keys=False, indent=4)
                             print(bcolors.green + resp + bcolors.reset)                
                             f.seek(0)
-                            self.client_sock.send(bytes(resp, 'cp1251'))
-                                
+                            self.client_sock.send(bytes(resp, 'cp1251'))                                
                             f.close()
+                    if 'serial' in fd: 
+                        if fd['dev_id'] == data['dest_dev_id']:
+                            print(bcolors.yellow + 'Read serial' + bcolors.reset)   
+
             elif data['msg_type'] == 'REQUEST_SETUP_VALUES':
                 # read example REQUEST_SETUP_VALUES
-                f = open('device_setup_values.json', 'r')
-                print(bcolors.green + f.read()  + bcolors.reset)
-                f.seek(0)
-                for l in f:                                        
-                    self.client_sock.send(bytes(l, 'cp1251'))
-                f.close()  
+                for fd in self.found_devices:
+                    if 'filename' in fd:                                                
+                        if fd['dev_id'] == data['dest_dev_id']:
+                            print(bcolors.yellow + 'Read file' + bcolors.reset)
+                            f = open(fd['filename'], 'r')
+                            try:
+                                demo_file_json = json.loads(f.read())
+                            except json.decoder.JSONDecodeError as err:
+                                print('JSON error')
+                                return
+                            f.close()    
+                            values = []
+                            if 'param_setup_full' in demo_file_json:
+                                for s in demo_file_json['param_setup_full']:
+                                    if 'section_param' in s:
+                                        for p in s['section_param']:
+                                            if ('param_value' in p) and ('param_id' in p) and ('param_type' in p):
+                                                if p['param_type'] in ('Combo', 'Check', 'Radio', 'Float', 'Integer'):
+                                                    values.append({'param_id':p['param_id'], 'param_value':p['param_value']})
+                            dp = device_params(data['msg_id']+1, data['dest_dev_id'], data['sender_dev_id'], {"dev_info": demo_file_json['dev_info'], "param_setup_full": values})  
+                            dp.msg_type = 'DEVICE_SETUP_VALUES'
+                            resp_values = json.dumps(dp, default=lambda o: o.__dict__, sort_keys=False, indent=4)
+                            print(bcolors.green + resp_values + bcolors.reset)                
+                            self.client_sock.send(bytes(resp_values, 'cp1251'))  
+                            
+                            # Filename to write
+                            filename = "newfile.txt"
+                            # Open the file with writing permission
+                            myfile = open(filename, 'w')
+                            # Write a line to the file
+                            myfile.write(resp_values)
+                            # Close the file
+                            myfile.close()                              
+                            
+                    if 'serial' in fd: 
+                        if fd['dev_id'] == data['dest_dev_id']:
+                            print(bcolors.yellow + 'Read serial' + bcolors.reset)                 
+
             elif data['msg_type'] == 'REQUEST_CHANGE_VALUE':
                 #REQUEST_CHANGE_VALUE                      
                 self.msg_id +=1

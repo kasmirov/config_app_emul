@@ -1,12 +1,12 @@
 {
   "dev_info": {
-    "dev_id": 111,
+    "dev_id": 123456789,
     "dev_type": "Servo Control Unit",
     "dev_name": "Servo Control Unit",
     "dev_hw_ver": "0.2",
     "dev_fw_ver": "0.2",
-    "fw_date": "2020.09.01 23:00:00",
-    "param_uuid": "123456789-c380-11ea-87d0-0242ac100333"
+    "fw_date": "202091 23:00:00",
+    "param_uuid": "123456789-0000-0000-0000-0242ac100999"
   },
   "param_setup_full": [
     {
@@ -416,8 +416,1259 @@
           "param_root": 0,
           "param_caption": "Pitch",
           "param_descr": "Select pitch channel"
+        },
+        {
+          "param_id": 1006,
+          "param_type": "Combo",
+          "param_options": [
+            {
+              "option_id": 0,
+              "option_name": "No Channel"
+            },
+            {
+              "option_id": 1,
+              "option_name": "Channel 1"
+            },
+            {
+              "option_id": 2,
+              "option_name": "Channel 2"
+            },
+            {
+              "option_id": 3,
+              "option_name": "Channel 3"
+            },
+            {
+              "option_id": 4,
+              "option_name": "Channel 4"
+            },
+            {
+              "option_id": 5,
+              "option_name": "Channel 5"
+            },
+            {
+              "option_id": 6,
+              "option_name": "Channel 6"
+            },
+            {
+              "option_id": 7,
+              "option_name": "Channel 7"
+            },
+            {
+              "option_id": 8,
+              "option_name": "Channel 8"
+            },
+            {
+              "option_id": 9,
+              "option_name": "Channel 9"
+            },
+            {
+              "option_id": 10,
+              "option_name": "Channel 10"
+            },
+            {
+              "option_id": 11,
+              "option_name": "Channel 11"
+            },
+            {
+              "option_id": 12,
+              "option_name": "Channel 12"
+            },
+            {
+              "option_id": 13,
+              "option_name": "Channel 13"
+            },
+            {
+              "option_id": 14,
+              "option_name": "Channel 14"
+            },
+            {
+              "option_id": 15,
+              "option_name": "Channel 15"
+            },
+            {
+              "option_id": 16,
+              "option_name": "Channel 16"
+            }
+          ],
+          "param_value": 0,
+          "param_root": 0,
+          "param_caption": "Safe mode",
+          "param_descr": "Select safe mode channel"
+        },
+        {
+          "param_id": 1007,
+          "param_type": "Caption",
+          "param_value": "Trim #1"
+        },
+        {
+          "param_id": 1008,
+          "param_type": "Combo",
+          "param_options": [
+            {
+              "option_id": 0,
+              "option_name": "No Channel"
+            },
+            {
+              "option_id": 1,
+              "option_name": "Channel 1"
+            },
+            {
+              "option_id": 2,
+              "option_name": "Channel 2"
+            },
+            {
+              "option_id": 3,
+              "option_name": "Channel 3"
+            },
+            {
+              "option_id": 4,
+              "option_name": "Channel 4"
+            },
+            {
+              "option_id": 5,
+              "option_name": "Channel 5"
+            },
+            {
+              "option_id": 6,
+              "option_name": "Channel 6"
+            },
+            {
+              "option_id": 7,
+              "option_name": "Channel 7"
+            },
+            {
+              "option_id": 8,
+              "option_name": "Channel 8"
+            },
+            {
+              "option_id": 9,
+              "option_name": "Channel 9"
+            },
+            {
+              "option_id": 10,
+              "option_name": "Channel 10"
+            },
+            {
+              "option_id": 11,
+              "option_name": "Channel 11"
+            },
+            {
+              "option_id": 12,
+              "option_name": "Channel 12"
+            },
+            {
+              "option_id": 13,
+              "option_name": "Channel 13"
+            },
+            {
+              "option_id": 14,
+              "option_name": "Channel 14"
+            },
+            {
+              "option_id": 15,
+              "option_name": "Channel 15"
+            },
+            {
+              "option_id": 16,
+              "option_name": "Channel 16"
+            }
+          ],
+          "param_value": 0,
+          "param_root": 1007,
+          "param_caption": "Trim #1 channel",
+          "param_descr": "Select trim #1 channel"
+        },
+        {
+          "param_id": 1009,
+          "param_type": "Combo",
+          "param_options": [
+            {
+              "option_id": 0,
+              "option_name": "Aileron Trim"
+            },
+            {
+              "option_id": 1,
+              "option_name": "Elevator Trim"
+            },
+            {
+              "option_id": 2,
+              "option_name": "Aileron stab PID_P"
+            },
+            {
+              "option_id": 3,
+              "option_name": "Aileron stab PID_I"
+            },
+            {
+              "option_id": 4,
+              "option_name": "Aileron stab PID_D"
+            },
+            {
+              "option_id": 5,
+              "option_name": "Elevator stab PID_P"
+            },
+            {
+              "option_id": 6,
+              "option_name": "Elevator stab PID_I"
+            },
+            {
+              "option_id": 7,
+              "option_name": "Elevator stab PID_D"
+            },
+            {
+              "option_id": 8,
+              "option_name": "Aileron ctrl PID_P"
+            },
+            {
+              "option_id": 9,
+              "option_name": "Aileron ctrl PID_I"
+            },
+            {
+              "option_id": 10,
+              "option_name": "Aileron ctrl PID_D"
+            },
+            {
+              "option_id": 11,
+              "option_name": "Elevator ctrl PID_P"
+            },
+            {
+              "option_id": 12,
+              "option_name": "Elevator ctrl PID_I"
+            },
+            {
+              "option_id": 13,
+              "option_name": "Elevator ctrl PID_D"
+            }
+          ],
+          "param_value": 0,
+          "param_root": 1007,
+          "param_caption": "Trim #1 control parameter",
+          "param_descr": "Select parameter for trim #1 "
+        },
+        {
+          "param_id": 1010,
+          "param_type": "Caption",
+          "param_value": "Trim #2"
+        },
+        {
+          "param_id": 1011,
+          "param_type": "Combo",
+          "param_options": [
+            {
+              "option_id": 0,
+              "option_name": "No Channel"
+            },
+            {
+              "option_id": 1,
+              "option_name": "Channel 1"
+            },
+            {
+              "option_id": 2,
+              "option_name": "Channel 2"
+            },
+            {
+              "option_id": 3,
+              "option_name": "Channel 3"
+            },
+            {
+              "option_id": 4,
+              "option_name": "Channel 4"
+            },
+            {
+              "option_id": 5,
+              "option_name": "Channel 5"
+            },
+            {
+              "option_id": 6,
+              "option_name": "Channel 6"
+            },
+            {
+              "option_id": 7,
+              "option_name": "Channel 7"
+            },
+            {
+              "option_id": 8,
+              "option_name": "Channel 8"
+            },
+            {
+              "option_id": 9,
+              "option_name": "Channel 9"
+            },
+            {
+              "option_id": 10,
+              "option_name": "Channel 10"
+            },
+            {
+              "option_id": 11,
+              "option_name": "Channel 11"
+            },
+            {
+              "option_id": 12,
+              "option_name": "Channel 12"
+            },
+            {
+              "option_id": 13,
+              "option_name": "Channel 13"
+            },
+            {
+              "option_id": 14,
+              "option_name": "Channel 14"
+            },
+            {
+              "option_id": 15,
+              "option_name": "Channel 15"
+            },
+            {
+              "option_id": 16,
+              "option_name": "Channel 16"
+            }
+          ],
+          "param_value": 0,
+          "param_root": 1010,
+          "param_caption": "Trim #2 channel",
+          "param_descr": "Select trim #2 channel"
+        },
+        {
+          "param_id": 1012,
+          "param_type": "Combo",
+          "param_options": [
+            {
+              "option_id": 0,
+              "option_name": "Aileron Trim"
+            },
+            {
+              "option_id": 1,
+              "option_name": "Elevator Trim"
+            },
+            {
+              "option_id": 2,
+              "option_name": "Aileron stab PID_P"
+            },
+            {
+              "option_id": 3,
+              "option_name": "Aileron stab PID_I"
+            },
+            {
+              "option_id": 4,
+              "option_name": "Aileron stab PID_D"
+            },
+            {
+              "option_id": 5,
+              "option_name": "Elevator stab PID_P"
+            },
+            {
+              "option_id": 6,
+              "option_name": "Elevator stab PID_I"
+            },
+            {
+              "option_id": 7,
+              "option_name": "Elevator stab PID_D"
+            },
+            {
+              "option_id": 8,
+              "option_name": "Aileron ctrl PID_P"
+            },
+            {
+              "option_id": 9,
+              "option_name": "Aileron ctrl PID_I"
+            },
+            {
+              "option_id": 10,
+              "option_name": "Aileron ctrl PID_D"
+            },
+            {
+              "option_id": 11,
+              "option_name": "Elevator ctrl PID_P"
+            },
+            {
+              "option_id": 12,
+              "option_name": "Elevator ctrl PID_I"
+            },
+            {
+              "option_id": 13,
+              "option_name": "Elevator ctrl PID_D"
+            }
+          ],
+          "param_value": 0,
+          "param_root": 1010,
+          "param_caption": "Trim #2 control parameter",
+          "param_descr": "Select parameter for trim #2 "
+        },
+        {
+          "param_id": 1013,
+          "param_type": "Combo",
+          "param_options": [
+            {
+              "option_id": 0,
+              "option_name": "No Channel"
+            },
+            {
+              "option_id": 1,
+              "option_name": "Channel 1"
+            },
+            {
+              "option_id": 2,
+              "option_name": "Channel 2"
+            },
+            {
+              "option_id": 3,
+              "option_name": "Channel 3"
+            },
+            {
+              "option_id": 4,
+              "option_name": "Channel 4"
+            },
+            {
+              "option_id": 5,
+              "option_name": "Channel 5"
+            },
+            {
+              "option_id": 6,
+              "option_name": "Channel 6"
+            },
+            {
+              "option_id": 7,
+              "option_name": "Channel 7"
+            },
+            {
+              "option_id": 8,
+              "option_name": "Channel 8"
+            },
+            {
+              "option_id": 9,
+              "option_name": "Channel 9"
+            },
+            {
+              "option_id": 10,
+              "option_name": "Channel 10"
+            },
+            {
+              "option_id": 11,
+              "option_name": "Channel 11"
+            },
+            {
+              "option_id": 12,
+              "option_name": "Channel 12"
+            },
+            {
+              "option_id": 13,
+              "option_name": "Channel 13"
+            },
+            {
+              "option_id": 14,
+              "option_name": "Channel 14"
+            },
+            {
+              "option_id": 15,
+              "option_name": "Channel 15"
+            },
+            {
+              "option_id": 16,
+              "option_name": "Channel 16"
+            }
+          ],
+          "param_value": 0,
+          "param_root": 0,
+          "param_caption": "AP pos mode ",
+          "param_descr": "Select AP position mode channel"
+        },
+        {
+          "param_id": 1014,
+          "param_type": "Combo",
+          "param_options": [
+            {
+              "option_id": 0,
+              "option_name": "No Channel"
+            },
+            {
+              "option_id": 1,
+              "option_name": "Channel 1"
+            },
+            {
+              "option_id": 2,
+              "option_name": "Channel 2"
+            },
+            {
+              "option_id": 3,
+              "option_name": "Channel 3"
+            },
+            {
+              "option_id": 4,
+              "option_name": "Channel 4"
+            },
+            {
+              "option_id": 5,
+              "option_name": "Channel 5"
+            },
+            {
+              "option_id": 6,
+              "option_name": "Channel 6"
+            },
+            {
+              "option_id": 7,
+              "option_name": "Channel 7"
+            },
+            {
+              "option_id": 8,
+              "option_name": "Channel 8"
+            },
+            {
+              "option_id": 9,
+              "option_name": "Channel 9"
+            },
+            {
+              "option_id": 10,
+              "option_name": "Channel 10"
+            },
+            {
+              "option_id": 11,
+              "option_name": "Channel 11"
+            },
+            {
+              "option_id": 12,
+              "option_name": "Channel 12"
+            },
+            {
+              "option_id": 13,
+              "option_name": "Channel 13"
+            },
+            {
+              "option_id": 14,
+              "option_name": "Channel 14"
+            },
+            {
+              "option_id": 15,
+              "option_name": "Channel 15"
+            },
+            {
+              "option_id": 16,
+              "option_name": "Channel 16"
+            }
+          ],
+          "param_value": 0,
+          "param_root": 0,
+          "param_caption": "AP alt mode",
+          "param_descr": "Select AP altitude mode channel"
+        },
+        {
+          "param_id": 1015,
+          "param_type": "Combo",
+          "param_options": [
+            {
+              "option_id": 0,
+              "option_name": "No Channel"
+            },
+            {
+              "option_id": 1,
+              "option_name": "Channel 1"
+            },
+            {
+              "option_id": 2,
+              "option_name": "Channel 2"
+            },
+            {
+              "option_id": 3,
+              "option_name": "Channel 3"
+            },
+            {
+              "option_id": 4,
+              "option_name": "Channel 4"
+            },
+            {
+              "option_id": 5,
+              "option_name": "Channel 5"
+            },
+            {
+              "option_id": 6,
+              "option_name": "Channel 6"
+            },
+            {
+              "option_id": 7,
+              "option_name": "Channel 7"
+            },
+            {
+              "option_id": 8,
+              "option_name": "Channel 8"
+            },
+            {
+              "option_id": 9,
+              "option_name": "Channel 9"
+            },
+            {
+              "option_id": 10,
+              "option_name": "Channel 10"
+            },
+            {
+              "option_id": 11,
+              "option_name": "Channel 11"
+            },
+            {
+              "option_id": 12,
+              "option_name": "Channel 12"
+            },
+            {
+              "option_id": 13,
+              "option_name": "Channel 13"
+            },
+            {
+              "option_id": 14,
+              "option_name": "Channel 14"
+            },
+            {
+              "option_id": 15,
+              "option_name": "Channel 15"
+            },
+            {
+              "option_id": 16,
+              "option_name": "Channel 16"
+            }
+          ],
+          "param_value": 0,
+          "param_root": 0,
+          "param_caption": "Aux #1",
+          "param_descr": "Select aux #1 channel"
+        },
+        {
+          "param_id": 1016,
+          "param_type": "Combo",
+          "param_options": [
+            {
+              "option_id": 0,
+              "option_name": "No Channel"
+            },
+            {
+              "option_id": 1,
+              "option_name": "Channel 1"
+            },
+            {
+              "option_id": 2,
+              "option_name": "Channel 2"
+            },
+            {
+              "option_id": 3,
+              "option_name": "Channel 3"
+            },
+            {
+              "option_id": 4,
+              "option_name": "Channel 4"
+            },
+            {
+              "option_id": 5,
+              "option_name": "Channel 5"
+            },
+            {
+              "option_id": 6,
+              "option_name": "Channel 6"
+            },
+            {
+              "option_id": 7,
+              "option_name": "Channel 7"
+            },
+            {
+              "option_id": 8,
+              "option_name": "Channel 8"
+            },
+            {
+              "option_id": 9,
+              "option_name": "Channel 9"
+            },
+            {
+              "option_id": 10,
+              "option_name": "Channel 10"
+            },
+            {
+              "option_id": 11,
+              "option_name": "Channel 11"
+            },
+            {
+              "option_id": 12,
+              "option_name": "Channel 12"
+            },
+            {
+              "option_id": 13,
+              "option_name": "Channel 13"
+            },
+            {
+              "option_id": 14,
+              "option_name": "Channel 14"
+            },
+            {
+              "option_id": 15,
+              "option_name": "Channel 15"
+            },
+            {
+              "option_id": 16,
+              "option_name": "Channel 16"
+            }
+          ],
+          "param_value": 0,
+          "param_root": 0,
+          "param_caption": "Aux #2",
+          "param_descr": "Select aux #2 channel"
+        },
+        {
+          "param_id": 1017,
+          "param_type": "Combo",
+          "param_options": [
+            {
+              "option_id": 0,
+              "option_name": "No Channel"
+            },
+            {
+              "option_id": 1,
+              "option_name": "Channel 1"
+            },
+            {
+              "option_id": 2,
+              "option_name": "Channel 2"
+            },
+            {
+              "option_id": 3,
+              "option_name": "Channel 3"
+            },
+            {
+              "option_id": 4,
+              "option_name": "Channel 4"
+            },
+            {
+              "option_id": 5,
+              "option_name": "Channel 5"
+            },
+            {
+              "option_id": 6,
+              "option_name": "Channel 6"
+            },
+            {
+              "option_id": 7,
+              "option_name": "Channel 7"
+            },
+            {
+              "option_id": 8,
+              "option_name": "Channel 8"
+            },
+            {
+              "option_id": 9,
+              "option_name": "Channel 9"
+            },
+            {
+              "option_id": 10,
+              "option_name": "Channel 10"
+            },
+            {
+              "option_id": 11,
+              "option_name": "Channel 11"
+            },
+            {
+              "option_id": 12,
+              "option_name": "Channel 12"
+            },
+            {
+              "option_id": 13,
+              "option_name": "Channel 13"
+            },
+            {
+              "option_id": 14,
+              "option_name": "Channel 14"
+            },
+            {
+              "option_id": 15,
+              "option_name": "Channel 15"
+            },
+            {
+              "option_id": 16,
+              "option_name": "Channel 16"
+            }
+          ],
+          "param_value": 0,
+          "param_root": 0,
+          "param_caption": "DG1",
+          "param_descr": "DG1 channel"
+        },
+        {
+          "param_id": 1018,
+          "param_type": "Combo",
+          "param_options": [
+            {
+              "option_id": 0,
+              "option_name": "No Channel"
+            },
+            {
+              "option_id": 1,
+              "option_name": "Channel 1"
+            },
+            {
+              "option_id": 2,
+              "option_name": "Channel 2"
+            },
+            {
+              "option_id": 3,
+              "option_name": "Channel 3"
+            },
+            {
+              "option_id": 4,
+              "option_name": "Channel 4"
+            },
+            {
+              "option_id": 5,
+              "option_name": "Channel 5"
+            },
+            {
+              "option_id": 6,
+              "option_name": "Channel 6"
+            },
+            {
+              "option_id": 7,
+              "option_name": "Channel 7"
+            },
+            {
+              "option_id": 8,
+              "option_name": "Channel 8"
+            },
+            {
+              "option_id": 9,
+              "option_name": "Channel 9"
+            },
+            {
+              "option_id": 10,
+              "option_name": "Channel 10"
+            },
+            {
+              "option_id": 11,
+              "option_name": "Channel 11"
+            },
+            {
+              "option_id": 12,
+              "option_name": "Channel 12"
+            },
+            {
+              "option_id": 13,
+              "option_name": "Channel 13"
+            },
+            {
+              "option_id": 14,
+              "option_name": "Channel 14"
+            },
+            {
+              "option_id": 15,
+              "option_name": "Channel 15"
+            },
+            {
+              "option_id": 16,
+              "option_name": "Channel 16"
+            }
+          ],
+          "param_value": 0,
+          "param_root": 0,
+          "param_caption": "DG2",
+          "param_descr": "DG2 channel"
         }
       ]
+    },
+    {
+      "section_id": 2,
+      "section_name": "Servos",
+      "section_param": [
+        {
+          "param_id": 2001,
+          "param_type": "Caption",
+          "param_value": "Servo 1"
+        },
+        {
+          "param_id": 2002,
+          "param_type": "Combo",
+          "param_options": [
+            {
+              "option_id": 0,
+              "option_name": "None"
+            },
+            {
+              "option_id": 1,
+              "option_name": "CCPM"
+            },
+            {
+              "option_id": 2,
+              "option_name": "Tail"
+            },
+            {
+              "option_id": 3,
+              "option_name": "Load"
+            }
+          ],
+          "param_value": 0,
+          "param_root": 2001,
+          "param_caption": "Servo Role",
+          "param_descr": "Servo Role"
+        },
+        {
+          "param_id": 2003,
+          "param_type": "Combo",
+          "param_options": [
+            {
+              "option_id": 0,
+              "option_name": "Normal"
+            },
+            {
+              "option_id": 1,
+              "option_name": "Reverse"
+            }
+          ],
+          "param_value": 0,
+          "param_root": 2001,
+          "param_caption": "Direction",
+          "param_descr": "Servo direction"
+        },
+        {
+          "param_id": 2004,
+          "param_type": "Integer",
+          "param_value": 1100,
+          "param_root": 2001,
+          "param_caption": "Min position",
+          "param_descr": "Min position, us",
+          "param_min": 900,
+          "param_max": 2100
+        },
+        {
+          "param_id": 2005,
+          "param_type": "Integer",
+          "param_min": 900,
+          "param_max": 2100,
+          "param_value": 1900,
+          "param_root": 2001,
+          "param_caption": "Max position",
+          "param_descr": "Max position, us"
+        },
+        {
+          "param_id": 2006,
+          "param_type": "Integer",
+          "param_min": 900,
+          "param_max": 2100,
+          "param_value": 1500,
+          "param_root": 2001,
+          "param_caption": "Central position",
+          "param_descr": "Central position, us"
+        },
+        {
+          "param_id": 2007,
+          "param_type": "Float",
+          "param_min": 0.5,
+          "param_max": 1.6,
+          "param_value": 1,
+          "param_root": 2001,
+          "param_caption": "Scale",
+          "param_descr": "Scale of servo displacement in one direction from center"
+        },
+        {
+          "param_id": 2008,
+          "param_type": "Integer",
+          "param_min": -180,
+          "param_max": 180,
+          "param_value": 0,
+          "param_root": 2001,
+          "param_caption": "Servo angle",
+          "param_descr": "Only for CCPM mode"
+        },
+        {
+          "param_id": 2011,
+          "param_type": "Caption",
+          "param_value": "Servo 2"
+        },
+        {
+          "param_id": 2012,
+          "param_type": "Combo",
+          "param_options": [
+            {
+              "option_id": 0,
+              "option_name": "None"
+            },
+            {
+              "option_id": 1,
+              "option_name": "CCPM"
+            },
+            {
+              "option_id": 2,
+              "option_name": "Tail"
+            },
+            {
+              "option_id": 3,
+              "option_name": "Load"
+            }
+          ],
+          "param_value": 0,
+          "param_root": 2011,
+          "param_caption": "Servo Role",
+          "param_descr": "Servo Role"
+        },
+        {
+          "param_id": 2013,
+          "param_type": "Combo",
+          "param_options": [
+            {
+              "option_id": 0,
+              "option_name": "Normal"
+            },
+            {
+              "option_id": 1,
+              "option_name": "Reverse"
+            }
+          ],
+          "param_value": 0,
+          "param_root": 2011,
+          "param_caption": "Direction",
+          "param_descr": "Servo direction"
+        },
+        {
+          "param_id": 2014,
+          "param_type": "Integer",
+          "param_value": 1100,
+          "param_root": 2011,
+          "param_caption": "Min position",
+          "param_descr": "Min position, us",
+          "param_min": 900,
+          "param_max": 2100
+        },
+        {
+          "param_id": 2015,
+          "param_type": "Integer",
+          "param_min": 900,
+          "param_max": 2100,
+          "param_value": 1900,
+          "param_root": 2011,
+          "param_caption": "Max position",
+          "param_descr": "Max position, us"
+        },
+        {
+          "param_id": 2016,
+          "param_type": "Integer",
+          "param_min": 900,
+          "param_max": 2100,
+          "param_value": 1500,
+          "param_root": 2011,
+          "param_caption": "Central position",
+          "param_descr": "Central position, us"
+        },
+        {
+          "param_id": 2017,
+          "param_type": "Float",
+          "param_min": 0.5,
+          "param_max": 1.6,
+          "param_value": 1,
+          "param_root": 2011,
+          "param_caption": "Scale",
+          "param_descr": "Scale of servo displacement in one direction from center"
+        },
+        {
+          "param_id": 2018,
+          "param_type": "Integer",
+          "param_min": -180,
+          "param_max": 180,
+          "param_value": 0,
+          "param_root": 2011,
+          "param_caption": "Servo angle",
+          "param_descr": "Only for CCPM mode"
+        },
+        {
+          "param_id": 2021,
+          "param_type": "Caption",
+          "param_value": "Servo 3"
+        },
+        {
+          "param_id": 2022,
+          "param_type": "Combo",
+          "param_options": [
+            {
+              "option_id": 0,
+              "option_name": "None"
+            },
+            {
+              "option_id": 1,
+              "option_name": "CCPM"
+            },
+            {
+              "option_id": 2,
+              "option_name": "Tail"
+            },
+            {
+              "option_id": 3,
+              "option_name": "Load"
+            }
+          ],
+          "param_value": 0,
+          "param_root": 2021,
+          "param_caption": "Servo Role",
+          "param_descr": "Servo Role"
+        },
+        {
+          "param_id": 2023,
+          "param_type": "Combo",
+          "param_options": [
+            {
+              "option_id": 0,
+              "option_name": "Normal"
+            },
+            {
+              "option_id": 1,
+              "option_name": "Reverse"
+            }
+          ],
+          "param_value": 0,
+          "param_root": 2021,
+          "param_caption": "Direction",
+          "param_descr": "Servo direction"
+        },
+        {
+          "param_id": 2024,
+          "param_type": "Integer",
+          "param_min": 900,
+          "param_max": 2100,
+          "param_value": 1100,
+          "param_root": 2021,
+          "param_caption": "Min position",
+          "param_descr": "Min position, us"
+        },
+        {
+          "param_id": 2025,
+          "param_type": "Integer",
+          "param_min": 900,
+          "param_max": 2100,
+          "param_value": 1900,
+          "param_root": 2021,
+          "param_caption": "Max position",
+          "param_descr": "Max position, us"
+        },
+        {
+          "param_id": 2026,
+          "param_type": "Integer",
+          "param_min": 900,
+          "param_max": 2100,
+          "param_value": 1500,
+          "param_root": 2021,
+          "param_caption": "Central position",
+          "param_descr": "Central position, us"
+        },
+        {
+          "param_id": 2027,
+          "param_type": "Float",
+          "param_min": 0.5,
+          "param_max": 1.6,
+          "param_value": 1,
+          "param_root": 2021,
+          "param_caption": "Scale",
+          "param_descr": "Scale of servo displacement in one direction from center"
+        },
+        {
+          "param_id": 2028,
+          "param_type": "Integer",
+          "param_min": -180,
+          "param_max": 180,
+          "param_value": 0,
+          "param_root": 2021,
+          "param_caption": "Servo angle",
+          "param_descr": "Only for CCPM mode"
+        },
+        {
+          "param_id": 2031,
+          "param_type": "Caption",
+          "param_value": "Servo 4"
+        },
+        {
+          "param_id": 2032,
+          "param_type": "Combo",
+          "param_options": [
+            {
+              "option_id": 0,
+              "option_name": "None"
+            },
+            {
+              "option_id": 1,
+              "option_name": "CCPM"
+            },
+            {
+              "option_id": 2,
+              "option_name": "Tail"
+            },
+            {
+              "option_id": 3,
+              "option_name": "Load"
+            }
+          ],
+          "param_value": 0,
+          "param_root": 2031,
+          "param_caption": "Servo Role",
+          "param_descr": "Servo Role"
+        },
+        {
+          "param_id": 2033,
+          "param_type": "Combo",
+          "param_options": [
+            {
+              "option_id": 0,
+              "option_name": "Normal"
+            },
+            {
+              "option_id": 1,
+              "option_name": "Reverse"
+            }
+          ],
+          "param_value": 0,
+          "param_root": 2031,
+          "param_caption": "Direction",
+          "param_descr": "Servo direction"
+        },
+        {
+          "param_id": 2034,
+          "param_type": "Integer",
+          "param_min": 900,
+          "param_max": 2100,
+          "param_value": 1100,
+          "param_root": 2031,
+          "param_caption": "Min position",
+          "param_descr": "Min position, us"
+        },
+        {
+          "param_id": 2035,
+          "param_type": "Integer",
+          "param_min": 900,
+          "param_max": 2100,
+          "param_value": 1900,
+          "param_root": 2031,
+          "param_caption": "Max position",
+          "param_descr": "Max position, us"
+        },
+        {
+          "param_id": 2036,
+          "param_type": "Integer",
+          "param_min": 900,
+          "param_max": 2100,
+          "param_value": 1500,
+          "param_root": 2031,
+          "param_caption": "Central position",
+          "param_descr": "Central position, us"
+        },
+        {
+          "param_id": 2037,
+          "param_type": "Float",
+          "param_min": 0.5,
+          "param_max": 1.6,
+          "param_value": 1,
+          "param_root": 2031,
+          "param_caption": "Scale",
+          "param_descr": "Scale of servo displacement in one direction from center"
+        },
+        {
+          "param_id": 2038,
+          "param_type": "Integer",
+          "param_min": -180,
+          "param_max": 180,
+          "param_value": 0,
+          "param_root": 2031,
+          "param_caption": "Servo angle",
+          "param_descr": "Only for CCPM mode"
+        }
+      ]
+    },
+    {
+      "section_id": 3,
+      "section_name": "CCPM",
+      "section_param": []
     }
   ]
 }

@@ -9,6 +9,14 @@
 		"file_name": "demo_servo_control_unit_compact.json"
       },
       {
+ 		"access_via": "file",
+		"file_name": "demo_1.json"
+      },
+     {
+ 		"access_via": "file",
+		"file_name": "demo_2.json"
+      },
+      {
  		"access_via": "com_port",
 		"com_port": "COM14",
 		"com_port_speed": 115200

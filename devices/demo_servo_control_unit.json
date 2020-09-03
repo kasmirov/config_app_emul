@@ -5,8 +5,8 @@
     "dev_name": "Servo Control Unit",
     "dev_hw_ver": "0.2",
     "dev_fw_ver": "0.2",
-    "fw_date": "2020.09.01 23:00:00",
-    "param_uuid": "123456789-c380-11ea-87d0-0242ac100111"
+    "fw_date": "202091 23:00:00",
+    "param_uuid": "123456789-c380-11ea-87d0-0242ac100999"
   },
   "param_setup_full": [
     {
@@ -1455,7 +1455,7 @@
           "param_type": "Float",
           "param_min": 0.5,
           "param_max": 1.6,
-          "param_value": 1.0,
+          "param_value": 1,
           "param_root": 2001,
           "param_caption": "Scale",
           "param_descr": "Scale of servo displacement in one direction from center"
@@ -1554,7 +1554,7 @@
           "param_type": "Float",
           "param_min": 0.5,
           "param_max": 1.6,
-          "param_value": 1.0,
+          "param_value": 1,
           "param_root": 2011,
           "param_caption": "Scale",
           "param_descr": "Scale of servo displacement in one direction from center"
@@ -1653,7 +1653,7 @@
           "param_type": "Float",
           "param_min": 0.5,
           "param_max": 1.6,
-          "param_value": 1.0,
+          "param_value": 1,
           "param_root": 2021,
           "param_caption": "Scale",
           "param_descr": "Scale of servo displacement in one direction from center"
@@ -1752,7 +1752,7 @@
           "param_type": "Float",
           "param_min": 0.5,
           "param_max": 1.6,
-          "param_value": 1.0,
+          "param_value": 1,
           "param_root": 2031,
           "param_caption": "Scale",
           "param_descr": "Scale of servo displacement in one direction from center"
